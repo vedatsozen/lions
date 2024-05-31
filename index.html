@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 53</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<section>
+    
+        <h1 class="lion">THE LION</h1>
+
+        <p class="detail">The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India.</p>
+ 
+
+        <div id="cards">
+
+                    <div id="card1" class="card">
+                        <h1>It has a muscular, broad-chested body; a short, rounded head; round ears; and a hairy tuft at the end of its tail</h1>
+                    </div>
+
+                    <div id="card2" class="card">
+                        <h1>It is sexually dimorphic; adult male lions are larger than females and have a prominent mane.</h1>
+                    </div>
+              
+                    <div id="card3" class="card">
+                        <h1>It is a social species, forming groups called prides. A lion's pride consists of a few adult males, related females, and cubs.</h1>
+                    </div>
+
+                    <div id="card4" class="card">
+                        <h1>The lion (Panthera leo) is a large cat of the genus Panthera, native to Africa and India.</h1>
+                    </div>
+
+        </div>
+       
+        
+</section>
+
+<script>
+
+$(document).ready(function() {
+
+    $("#card1").mouseover(function(){
+    $("body").css("background-image","url('lion1.jpg')");
+    $("body").css("background-size","100% 100%")
+    $("body").css("background-repeat","no-repeat")
+    })
+
+    $("#card2").mouseover(function(){
+    $("body").css("background-image","url('lion2.jpg')");
+    $("body").css("background-size","100% 100%")
+    $("body").css("background-repeat","no-repeat")
+    })
+
+    $("#card3").mouseover(function(){
+    $("body").css("background-image","url('lion3.jpg')");
+    $("body").css("background-size","100% 100%")
+    $("body").css("background-repeat","no-repeat")
+    })
+
+    $("#card4").mouseover(function(){
+    $("body").css("background-image","url('lion.jpg')");
+    $("body").css("background-size","100% 100%")
+    $("body").css("background-repeat","no-repeat")
+    })
+
+    $(".card").mouseover(function() {
+    let text = $(this).children("h1").text();
+    $("p.detail").text(text);
+    })
+
+
+
+
+
+})
+
+</script>
+
+</body>
+</html>
